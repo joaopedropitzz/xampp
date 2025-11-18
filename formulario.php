@@ -6,15 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+    if(isset($_GET['error'])&& $_GET['error']== 'faltando_dados'){
+        echo "<p style='color:red;'>Erro: Por favor, preencha todos os campos.</p>";
+    }
+    ?>
     <h2>Formulario de Cadastro</h2>
-    <form action="imc.php" method="get">
-        <label for="iname">Nome</label>
-        <input type="text" id="iname">
-        <label for="iemail">E-mail</label>
+    <form action="imc.php" method="POST">
+        <label for="name">Nome</label>
+        <input type="text" id="iname" name = "nome">
+        <label for="email">E-mail</label>
         <input type="text" id="iemail" name="email">
-        <label for="ipeso">Peso</label>
+        <label for="peso">Peso</label>
         <input type="text" id="ipeso" name="peso">
-        <label for="ialtura">Altura</label>
+        <label for="altura">Altura</label>
         <input type="text" id="ialtura" name="altura">
         <input type="submit" value="Cadastrar">
     </form>
