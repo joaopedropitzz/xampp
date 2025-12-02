@@ -1,21 +1,19 @@
 <?php
-    session_start();
-    if(!isset($_POST['username'])|| !isset($_POST['password'])){
-        header("Location: login.php?error=faltando_dados");
-        exit();
-    }
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    if($username === "admin" && $password === "senha123"){
-        $_SESSION['username']=$username;
-        echo "<h1>Login bem-sucedido!</h1>";
-        echo "<p>Bem-vindo, $username!</p>";
-    }
-    else{
-        $_SESSION['username']=NULL;
-        header("Location: login.php?error=credenciais_invalidas");
-        exit();
-    }
+
+if(!isset($_POST['username']) || !isset($_POST['password'])){
+    header("Location: login.php?error=faltando_dados");
+    exit();
+}
+$username = $_POST['username'];
+$password = $_POST['password'];
+if($username === "admin" && $password === "senha123"){
+    echo "<h1> Login bem-sucedido!</h1>";
+    echo "<p> Bem-Vindo, $username!</p>";
+}
+else{
+    header("Location: login.php?error=credenciais_invalidas");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,9 +23,6 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="formulario.php">
-    <input type="text" name="nome">
-    <input type="submit" value= "Ir para o formulário de IMC">
-    </form>
+<form action="imc_formulario.php" method="GET">
 </body>
 </html>
