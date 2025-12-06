@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style_crud.css">
+    
 </head>
 <body>
-    <h2>Login</h2>
+    <h2 id= "logintext">Login</h2>
     <form action="autenticacao.php" method="POST">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required>
@@ -14,7 +16,7 @@
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
       <br><br>
-      <input type="submit" value="Login">
+      <input type="submit" value="Login" id="buttonlogin">
     </form>
 </body>
 </html>
