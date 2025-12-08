@@ -1,6 +1,6 @@
 <?php 
 function connecta_bd(){
-    $servername = "localhost:3312";
+    $servername = "localhost:3307";
     $username = "root";
     $password = "";
     $dbname = "webti";

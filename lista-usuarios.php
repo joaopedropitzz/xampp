@@ -18,7 +18,7 @@ $usuarios = get_usuarios();
         <td><?php echo htmlspecialchars($usuario['id']);?></td>
         <td><?php echo htmlspecialchars($usuario['nome']);?></td>
         <td><?php echo htmlspecialchars($usuario['login']);?></td>
-        <td><a href="editar_usuario.php?id=<?php echo urldecode($usuario['id']);?>">Editar</a></td>
+        <td><a href="EditarUsuario.php?id=<?php echo urldecode($usuario['id']);?>">Editar</a></td>
     </tr>
 <?php endforeach; ?>
 </table>
