@@ -2,10 +2,12 @@
 require_once "conexao.php";
 $usuarios = get_usuarios();
 
+
 //echo var_dump ($usuarios);
 ?>
 <div class="container">
 <h1>Lista de Usuários</h1>
+<link rel="stylesheet" href="style_listausuarios.css">
 <table border="1">
    <tr>
     <th>ID</th>

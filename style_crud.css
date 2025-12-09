@@ -37,3 +37,17 @@ header{
     display: block;
     margin: 0 auto;
 }
+#buttoncadastro{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#botaoc{
+    display: block;
+    margin: 0 auto;
+}
+#buttontela{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}

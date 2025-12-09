@@ -17,6 +17,9 @@
       <input type="password" id="password" name="password" required>
       <br><br>
       <input type="submit" value="Login" id="buttonlogin">
+      <button type="button" id = "buttoncadastro"onclick="window.location.href='cadastro_usuario.php'">
+    Cadastro  
+</button>
     </form>
 </body>
 </html>

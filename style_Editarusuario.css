@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 46%, 57%);       
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;        
+    
+}
+.container {
+    text-align: center;
+    margin: 10px 0;
+}

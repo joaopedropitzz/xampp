@@ -1,6 +1,7 @@
 <?php 
 function connecta_bd(){
-    $servername = "localhost:3307";
+    //3307 escola 3312 casa
+    $servername = "localhost:3312";
     $username = "root";
     $password = "";
     $dbname = "webti";

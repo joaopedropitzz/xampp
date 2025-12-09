@@ -18,7 +18,9 @@
         <input type="text" id="login" name="login" required><br><br>
         <label for="senha">senha:</label>
         <input type="password" id="senha" name="senha" required><br><br>
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar" id= "botaoc">
+        <button type="button" id = "buttontela"onclick="window.location.href='login.php'">
+    Tela de login
     </form>
     </div>
 </body>
